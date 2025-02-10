@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect Button</title>
+    <style>
+        body {
+            background-image: url('images/jeep.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #fff;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .header {
+            position: absolute;
+            top: 19px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .header img {
+            height: 100px;
+            display: block;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+        }
+
+        .redirect-button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        .redirect-button:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .gmr-text {
+            font-size: 2em;
+            font-weight: bold;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+            padding: 15px;
+            border-radius: 10px;
+            display: inline-block;
+            background: linear-gradient(90deg, #0056b3, #cc8400, #0056b3);
+            -webkit-background-clip: text;
+        }
+
+        .gmr-text {
+            font-size: 2em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+            background-color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+
+        .gmr-highlight {
+            font-size: 2em;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+            background-color: yellow;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+
+        .bottom-container {
+            position: absolute;
+            bottom: 5px;
+            right: 20px;
+            color: #eee;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://www.liblogo.com/img-logo/max/gm6820gae3-gmr-logo-gmr-logo-construction--com.png" alt="GMR Logo">
+    </div>
+    <div class="content">
+        <button class="redirect-button" onclick="window.location.href='https://app.fleetx.io/users/autologin?userName=subham.panda@moambulance.in&password=Welcome@123'">
+            Click Here
+        </button>
+            <div class="gmr-highlight">
+                GMR Advance Fuel Tank Monitoring System
+            </div>
+        </div>
+    </div>
+    <div class="bottom-container">
+        <p>Powered by GMR Limited</p>
+    </div>
+</body>
+</html>
